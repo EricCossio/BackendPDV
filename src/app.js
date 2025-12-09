@@ -12,6 +12,8 @@ console.log("Fronend ",process.env.BASE_URL_FRONTEND);
 import authRoutes from './routes/auth.routes.js';
 //Importamos las rutas para productos
 import productRoutes from './routes/products.routes.js';
+//Importamos las rutas para ventas
+import salesRoutes from './routes/sales.routes.js'
 
 
 const app= express();
@@ -31,5 +33,6 @@ app.use(express.urlencoded({extended: true})); //Recibir imagenes
 //Indicamos al servidor que utilice las rutas del obketo authRoutes
 app.use('/api/', authRoutes);
 app.use('/api/', productRoutes);
+app.use('/api/', salesRoutes);
 
 export default app;
