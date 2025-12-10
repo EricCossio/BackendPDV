@@ -5,5 +5,5 @@ const router = Router();
 
 router.post("/sales", createSale);
 //Ruta para obtener todas las ventas
-router.get('/getallsales', getAllSales)
+router.get('/sales/getallsales', getAllSales)
 export default router;
